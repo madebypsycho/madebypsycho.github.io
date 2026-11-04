@@ -88,13 +88,23 @@ function initMobileNav() {
 }
 
 /* --------------------------------------------------------------------------
-   3. Contact Form Submission & Feedback
+   3. Single-Step Automated Contact Form Submission (Formspree API)
    -------------------------------------------------------------------------- */
 function initContactForms() {
   const forms = document.querySelectorAll('.contact-form-element');
 
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    const targetEmail = (window.PSYCHO_CONFIG && window.PSYCHO_CONFIG.email) 
+      ? window.PSYCHO_CONFIG.email 
+      : 'psycholabssupport@gmail.com';
+    const formspreeId = (window.PSYCHO_CONFIG && window.PSYCHO_CONFIG.formService && window.PSYCHO_CONFIG.formService.formspreeId) 
+      ? window.PSYCHO_CONFIG.formService.formspreeId.trim() 
+      : 'moeerlqd';
+
+    const endpoint = `https://formspree.io/f/${formspreeId}`;
+    form.setAttribute('action', endpoint);
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const nameInput = form.querySelector('[name="name"]');
@@ -105,32 +115,93 @@ function initContactForms() {
 
       if (!nameInput || !emailInput || !messageInput) return;
 
-      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Send Message';
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = 'Sending...';
+      const nameVal = nameInput.value.trim();
+      const emailVal = emailInput.value.trim();
+      const messageVal = messageInput.value.trim();
+
+      if (!nameVal || !emailVal || !messageVal) {
+        if (feedbackEl) {
+          feedbackEl.className = 'form-feedback-message error';
+          feedbackEl.style.display = 'block';
+          feedbackEl.innerHTML = '<strong>⚠️ MISSING FIELDS:</strong> Please fill in all required fields before sending.';
+        }
+        return;
       }
 
-      // Simulate quick transmission
-      setTimeout(() => {
+      // Single-step submission state
+      const originalBtnHTML = submitBtn ? submitBtn.innerHTML : '<span>SEND MESSAGE</span>';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>TRANSMITTING...</span>';
+      }
+
+      if (feedbackEl) {
+        feedbackEl.style.display = 'none';
+        feedbackEl.className = 'form-feedback-message';
+      }
+
+      try {
+        const formData = new FormData(form);
+
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerHTML = originalBtnText;
+          submitBtn.innerHTML = originalBtnHTML;
         }
 
-        form.reset();
+        if (response.ok) {
+          form.reset();
+
+          if (feedbackEl) {
+            feedbackEl.className = 'form-feedback-message';
+            feedbackEl.style.display = 'block';
+            feedbackEl.innerHTML = `
+              <strong>⚡ TRANSMISSION DELIVERED!</strong><br>
+              Thank you, <strong>${escapeHtml(nameVal)}</strong>! Your message has been sent directly to the Psycho Labs studio inbox (<code>${targetEmail}</code>). We will review it shortly.
+            `;
+            feedbackEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }
+        } else {
+          const errData = await response.json().catch(() => ({}));
+          throw new Error(errData.error || 'Formspree transmission failed.');
+        }
+
+      } catch (err) {
+        console.error('Contact form submission error:', err);
+
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnHTML;
+        }
 
         if (feedbackEl) {
+          feedbackEl.className = 'form-feedback-message error';
           feedbackEl.style.display = 'block';
           feedbackEl.innerHTML = `
-            <strong>⚡ MESSAGE TRANSMITTED</strong><br>
-            Thank you for reaching out to Psycho Labs. We have received your note and will review it shortly.
+            <strong>⚠️ TRANSMISSION ERROR:</strong> Could not reach the form server.<br>
+            Please check your connection or email us directly at <a href="mailto:${targetEmail}" style="color: inherit; text-decoration: underline;"><code>${targetEmail}</code></a>.
           `;
           feedbackEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-      }, 500);
+      }
     });
   });
+}
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 /* --------------------------------------------------------------------------

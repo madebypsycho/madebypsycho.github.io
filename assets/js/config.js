@@ -20,6 +20,15 @@ const PSYCHO_CONFIG = {
   get supportEmail() { return this.email; },
   get privacyEmail() { return this.email; },
 
+  // Contact Form Automated Delivery Service
+  // Formspree (Free & Reliable for GitHub Pages):
+  // 1. Create a free form at https://formspree.io connected to psycholabssupport@gmail.com
+  // 2. Paste your Form ID here (e.g. "mqkvywzy") for automatic background delivery.
+  // When empty, the form activates the instant 1-click Web Gmail & Mail Dispatch Hub.
+  formService: {
+    formspreeId: "moeerlqd" // e.g. "xaykzabc"
+  },
+
   // Business Phone & Location
   businessPhone: "+91 6201211903",
   businessLocation: "Patna, India",

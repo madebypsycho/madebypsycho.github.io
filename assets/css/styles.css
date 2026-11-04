@@ -1186,12 +1186,25 @@ img {
   font-family: var(--font-mono);
   font-size: 0.88rem;
   color: #1B5E20;
+  line-height: 1.6;
 }
 
 [data-theme="dark"] .form-feedback-message {
   background: #112915;
   border-color: #388E3C;
   color: #A5D6A7;
+}
+
+.form-feedback-message.error {
+  background: #FFEBEE;
+  border-color: #C62828;
+  color: #B71C1C;
+}
+
+[data-theme="dark"] .form-feedback-message.error {
+  background: #2C1214;
+  border-color: #EF5350;
+  color: #FFCDD2;
 }
 
 /* --------------------------------------------------------------------------
