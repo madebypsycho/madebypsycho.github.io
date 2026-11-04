@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReverseView Privacy Policy — Psycho Labs</title>
+  <meta name="description" content="Dedicated Privacy Policy for ReverseView Android application by Psycho Labs. Transparent details on hardware access, USB permissions, and data handling.">
+  <meta name="author" content="Psycho Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ReverseView Privacy Policy — Psycho Labs">
+  <meta property="og:description" content="Privacy practices, permissions, and on-device processing disclosures for ReverseView Android app.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="policy-page-header">
+      <div class="container">
+        <div class="policy-badge-row">
+          <span class="sticker purple tilt-left">APP-SPECIFIC POLICY</span>
+          <span class="sticker yellow">ANDROID APPLICATION</span>
+        </div>
+        <h1 class="section-title">REVERSEVIEW PRIVACY POLICY</h1>
+        <p class="section-desc">
+          Specific privacy disclosures for the ReverseView Android camera utility developed by Psycho Labs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="policy-content-body">
+      <div class="container container-narrow">
+        
+        <div class="legal-card">
+          
+          <div class="placeholder-notice">
+            <strong>DOCUMENT STATUS &amp; INSTRUCTIONS FOR DEVELOPER:</strong><br>
+            This policy is tailored specifically for the <strong>ReverseView</strong> Android application. Placeholders marked in yellow brackets <span class="placeholder-highlight">[LIKE THIS]</span> must be reviewed and customized to match your exact build specifications before submitting this URL to Google Play Console.
+          </div>
+
+          <p>
+            <strong>Application Name:</strong> ReverseView<br>
+            <strong>Package Name:</strong> <span class="placeholder-highlight">[INSERT_ANDROID_PACKAGE_NAME, e.g., com.psycholabs.reverseview]</span><br>
+            <strong>Developer / Organization:</strong> Psycho Labs (<span data-config="legalEntityName">[INSERT LEGAL ENTITY NAME]</span>)<br>
+            <strong>Developer Contact Email:</strong> <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email" style="text-decoration: underline;">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a><br>
+            <strong>Last Updated:</strong> <span class="placeholder-highlight">[INSERT_DATE, e.g., November 3, 2026]</span>
+          </p>
+
+          <h2>1. OVERVIEW &amp; NATURE OF THE APP</h2>
+          <p>
+            <strong>ReverseView</strong> is an Android utility application designed to connect to an external USB Video Class (UVC) capture device or USB camera and render a live video stream on the device screen (typically used as an auxiliary rear-view monitor or backup camera).
+          </p>
+          <p>
+            Psycho Labs is committed to complete transparency regarding hardware access, on-device data processing, and user privacy.
+          </p>
+
+          <h2>2. DATA ACCESSED &amp; HARDWARE PERMISSIONS</h2>
+          <p>
+            To perform its primary functionality, ReverseView requires access to specific device hardware APIs. Below is a complete breakdown of permissions requested and how each is utilized:
+          </p>
+
+          <h3>A. USB Host Permission (android.hardware.usb.host)</h3>
+          <ul>
+            <li><strong>Purpose:</strong> When you connect a compatible USB capture card or camera via USB-OTG, the application requests standard Android system permission to communicate with the USB device.</li>
+            <li><strong>Usage:</strong> This permission is used exclusively to negotiate USB video communication protocols (UVC standard) and pull video frames for display.</li>
+            <li><strong>Storage &amp; Transmission:</strong> USB communication occurs directly between the physical USB peripheral and local device memory. No peripheral identifiers or USB serial numbers are sent over the internet.</li>
+          </ul>
+
+          <h3>B. Camera Permission (android.permission.CAMERA)</h3>
+          <ul>
+            <li><strong>Purpose:</strong> Depending on the Android OS version and underlying camera stack (e.g., Android Camera2 API or UVC direct drivers), Android may require runtime camera permission to read external video frames.</li>
+            <li><strong>Usage:</strong> ReverseView accesses only the video feed of the connected external USB video device. It does not activate your device's built-in front or rear cameras unless you explicitly toggle to a device camera mode.</li>
+            <li><strong>Real-Time Processing:</strong> Video frames are processed in volatile RAM in real time strictly for live rendering on your screen. <strong>ReverseView does NOT record, save, store, or transmit any video, audio, or photographic frames to any external server or third party.</strong></li>
+          </ul>
+
+          <h3>C. Foreground Service (android.permission.FOREGROUND_SERVICE)</h3>
+          <ul>
+            <li><strong>Purpose:</strong> If enabled, used to keep the video display active and prevent the operating system from terminating the video pipeline while maneuvering or parking.</li>
+          </ul>
+
+          <h2>3. PERSONAL DATA COLLECTION</h2>
+          <p>
+            <span class="placeholder-highlight">[CONFIRM OR AMEND: ReverseView does NOT collect, store, or transmit any personal identifiable information (PII). We do not require account registration, login credentials, location data, or contact lists to use the application.]</span>
+          </p>
+
+          <h2>4. DIAGNOSTICS &amp; CRASH REPORTING</h2>
+          <div class="placeholder-notice">
+            <strong>DEVELOPER ACTION REQUIRED — SPECIFY CRASH REPORTING STATUS:</strong><br>
+            Choose Option A or Option B below and remove the other before publishing:
+          </div>
+          <p>
+            <span class="placeholder-highlight">[OPTION A — IF NO ANALYTICS OR CRASH SDK IS USED:]</span><br>
+            ReverseView does not include any third-party analytics SDKs, advertising trackers, or remote telemetry frameworks. The application functions entirely offline.
+          </p>
+          <p>
+            <span class="placeholder-highlight">[OPTION B — IF YOU USE GOOGLE PLAY CRASH REPORTING / FIREBASE CRASHLYTICS:]</span><br>
+            ReverseView may collect anonymous technical crash logs (such as stack traces, device model, and Android OS version) through standard Google Play Console developer reports or <span class="placeholder-highlight">[INSERT CRASH SERVICE, e.g., Firebase Crashlytics]</span> solely to identify and fix software bugs. These diagnostic reports contain no personal data or video frames.
+          </p>
+
+          <h2>5. THIRD-PARTY SERVICES &amp; DATA SHARING</h2>
+          <p>
+            We do not sell, rent, license, or share any data from ReverseView with third-party advertisers, data brokers, or marketing networks.
+          </p>
+          <p>
+            Third-party libraries utilized within the app are strictly limited to open-source video processing and Android compatibility libraries:
+          </p>
+          <ul>
+            <li><span class="placeholder-highlight">[LIST ANY OPEN-SOURCE LIBRARIES, e.g., AndroidX, libuvc/UVCCamera if used, or State "Standard Android Jetpack Libraries"]</span></li>
+          </ul>
+
+          <h2>6. DATA RETENTION &amp; DELETION</h2>
+          <p>
+            Because ReverseView does not collect or store user data on remote servers, there is no remote user data to retain or delete. All user preferences (such as screen orientation, mirror mode, or guide-line toggles) are stored locally on your device via standard Android SharedPreferences and are permanently removed when the application is uninstalled or its local data is cleared.
+          </p>
+
+          <h2>7. DATA SECURITY</h2>
+          <p>
+            We adhere to Android security best practices. Video stream decoding is handled locally within the application sandbox. No external network connections are established to transmit camera feeds.
+          </p>
+
+          <h2>8. CHILDREN'S PRIVACY</h2>
+          <p>
+            ReverseView is a general automotive hardware utility. It is not directed toward children under 13 years of age, and we do not knowingly collect information from children.
+          </p>
+
+          <h2>9. CHANGES TO THIS PRIVACY POLICY</h2>
+          <p>
+            If we update ReverseView to introduce new features, hardware protocols, or diagnostic tools, this privacy policy will be updated accordingly with a revised "Last Updated" date.
+          </p>
+
+          <h2>10. PRIVACY CONTACT</h2>
+          <p>
+            For questions, clarifications, or technical inquiries regarding this Privacy Policy or ReverseView's hardware permissions, please contact our studio:
+          </p>
+          <div class="placeholder-notice">
+            <strong>Psycho Labs — ReverseView Support</strong><br>
+            Developer: Psycho Labs<br>
+            Email: <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email" style="text-decoration: underline;">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a><br>
+            Studio Website: <span data-config="websiteUrl">[WEBSITE_URL]</span>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="apps.html#reverseview" class="btn btn-sm btn-secondary">&larr; Back to ReverseView Details</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

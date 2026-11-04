@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Psycho Labs | Official Developer Studio Contact</title>
+  <meta name="description" content="Get in touch with Psycho Labs for app support, technical feedback, hardware inquiries, or business communication.">
+  <meta name="author" content="Psycho Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Psycho Labs">
+  <meta property="og:description" content="Reach out to the developers at Psycho Labs. Direct communication channel for software and Android app inquiries.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="policy-page-header">
+      <div class="container">
+        <div class="policy-badge-row">
+          <span class="sticker yellow tilt-left">DIRECT DISPATCH</span>
+          <span class="sticker purple">COMMUNICATION CHANNEL</span>
+        </div>
+        <h1 class="section-title">GOT AN INTERESTING IDEA?</h1>
+        <p class="section-desc">
+          For questions, feedback, collaborations or app support, get in touch. We read every message.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="policy-content-body">
+      <div class="container">
+        
+        <div class="contact-grid">
+          
+          <!-- Left Info Cards -->
+          <div class="contact-info-panel">
+            
+            <div class="contact-info-card">
+              <h2 class="contact-info-title">
+                <span>📬</span> Studio Directory
+              </h2>
+              
+              <!-- Single unified email address per user request -->
+              <div class="contact-item">
+                <span class="contact-label">Studio Email Address</span>
+                <span class="contact-value">
+                  <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a>
+                </span>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Business Phone</span>
+                <span class="contact-value" data-config="businessPhone">[Optional Business Phone]</span>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Registered Location / Country</span>
+                <span class="contact-value" data-config="businessLocation">[City, Country]</span>
+              </div>
+            </div>
+
+            <div class="sticker-feature-card">
+              <div class="feature-card-header">
+                <span class="feature-icon">🔍</span>
+                <h3 class="feature-title" style="font-size: 1.15rem;">Google Play Developer Verification</h3>
+              </div>
+              <p class="feature-text">
+                This website is the official organization homepage for <strong>Psycho Labs</strong>. All contact points listed above are monitored directly by the developer studio.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="contact-form-card">
+            <h2 style="font-size: 1.45rem; text-transform: uppercase; margin-bottom: 1.25rem;">Send A Message</h2>
+
+            <form class="contact-form-element" action="#" method="POST">
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Alex Mercer" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email *</label>
+                <input type="email" id="email" name="email" required placeholder="alex@example.com" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject / Related Project</label>
+                <input type="text" id="subject" name="subject" placeholder="ReverseView feedback / General question" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your question, feedback, or inquiry here..." class="form-textarea"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>SEND MESSAGE</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+            </form>
+
+            <div class="form-feedback-message"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

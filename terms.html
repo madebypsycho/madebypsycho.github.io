@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms &amp; Conditions — Psycho Labs | Official Developer Studio Terms</title>
+  <meta name="description" content="Terms and Conditions governing the use of Psycho Labs website, software applications, and Android utilities.">
+  <meta name="author" content="Psycho Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Psycho Labs Terms &amp; Conditions">
+  <meta property="og:description" content="Terms of use, software licenses, and automotive disclaimers for Psycho Labs software.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="policy-page-header">
+      <div class="container">
+        <div class="policy-badge-row">
+          <span class="sticker yellow tilt-left">LEGAL DOCUMENT</span>
+          <span class="sticker black">TERMS OF USE</span>
+        </div>
+        <h1 class="section-title">TERMS &amp; CONDITIONS</h1>
+        <p class="section-desc">
+          Terms governing the use of Psycho Labs software, applications, and official online services.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="policy-content-body">
+      <div class="container container-narrow">
+        
+        <div class="legal-card">
+          
+          <p>
+            <strong>Effective Date:</strong> <span class="placeholder-highlight">[INSERT_DATE, e.g., November 3, 2026]</span><br>
+            <strong>Last Updated:</strong> <span class="placeholder-highlight">[INSERT_DATE, e.g., November 3, 2026]</span>
+          </p>
+
+          <h2>1. ACCEPTANCE OF TERMS</h2>
+          <p>
+            These Terms and Conditions ("Terms") form a binding legal agreement between you ("User" or "you") and <strong>Psycho Labs</strong> ("we", "us", or "our"), governing your access to and use of our website (<span data-config="websiteUrl">[WEBSITE_URL]</span>) and our software applications, including ReverseView and Auto Launcher (collectively, the "Services").
+          </p>
+          <p>
+            By downloading, accessing, or using any of our Services, you agree to be bound by these Terms. If you do not agree, do not install or use our software.
+          </p>
+
+          <h2>2. SOFTWARE LICENSE &amp; RESTRICTIONS</h2>
+          <p>
+            Subject to your compliance with these Terms, Psycho Labs grants you a personal, non-exclusive, non-transferable, revocable license to download, install, and execute the applications on compatible Android devices owned or controlled by you for personal or internal use.
+          </p>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Modify, adapt, translate, reverse engineer, decompile, or disassemble any portion of our applications, except to the extent permitted by mandatory applicable law.</li>
+            <li>Rent, lease, sub-license, resell, or distribute our software to any third party without our prior written consent.</li>
+            <li>Bypass or disable any security, licensing, or hardware verification mechanisms embedded in the software.</li>
+          </ul>
+
+          <h2>3. AUTOMOTIVE &amp; SAFETY DISCLAIMERS (IMPORTANT)</h2>
+          <div class="placeholder-notice">
+            <strong>CRITICAL SAFETY WARNING FOR REVERSEVIEW &amp; IN-VEHICLE APPS:</strong><br>
+            Please read this section carefully before using any Psycho Labs automotive utilities.
+          </div>
+          <p>
+            <strong>Driver Responsibility:</strong> ReverseView, Auto Launcher, and related in-vehicle utilities are supplementary driver aids. <strong>They are not autonomous safety systems or guaranteed collision avoidance mechanisms.</strong>
+          </p>
+          <ul>
+            <li>External USB video feeds may experience latency, visual distortion, frozen frames, or hardware disconnection due to physical cabling issues or OS power-management interrupts.</li>
+            <li>You must always visually check your vehicle's physical mirrors, look over your shoulders, and inspect your surroundings before and while reversing or operating any motor vehicle.</li>
+            <li>You agree to comply with all local, state, and national traffic regulations regarding hands-free device usage and windshield/dashboard device mounting.</li>
+          </ul>
+
+          <h2>4. INTELLECTUAL PROPERTY RIGHTS</h2>
+          <p>
+            All source code, designs, logos, trademarks, artwork (including the Psycho Labs robot mascot), icons, and documentation are the exclusive intellectual property of Psycho Labs or our licensors and are protected by applicable copyright and trademark laws.
+          </p>
+
+          <h2>5. THIRD-PARTY HARDWARE &amp; ANDROID COMPATIBILITY</h2>
+          <p>
+            Our software communicates with third-party hardware (such as USB-OTG adapters, UVC capture cards, analog cameras, and vehicle head units). Psycho Labs does not manufacture or warrant these third-party hardware peripherals. Compatibility may vary depending on the Android chipset, operating system build, and USB controller quality.
+          </p>
+
+          <h2>6. DISCLAIMER OF WARRANTIES</h2>
+          <p>
+            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SERVICES AND SOFTWARE ARE PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+          </p>
+
+          <h2>7. LIMITATION OF LIABILITY</h2>
+          <p>
+            TO THE FULLEST EXTENT PERMITTED BY LAW, PSYCHO LABS AND ITS DEVELOPERS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA, USE, GOODWILL, VEHICULAR DAMAGE, OR PERSONAL INJURY ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE OUR SOFTWARE OR SERVICES.
+          </p>
+
+          <h2>8. GOVERNING LAW &amp; JURISDICTION</h2>
+          <p>
+            These Terms shall be governed by and construed in accordance with the laws of <span class="placeholder-highlight">[INSERT YOUR JURISDICTION, e.g., the State of California, United States]</span>, without regard to its conflict of law principles.
+          </p>
+
+          <h2>9. TERMINATION</h2>
+          <p>
+            We may terminate or suspend your license to use our applications at any time if you breach these Terms. Upon termination, you must cease all use of the software and delete all copies from your devices.
+          </p>
+
+          <h2>10. CONTACT FOR LEGAL INQUIRIES</h2>
+          <p>
+            For questions or notices regarding these Terms, please contact our studio:
+          </p>
+          <div class="placeholder-notice">
+            <strong>Psycho Labs — Legal Desk</strong><br>
+            Developer: Psycho Labs (<span data-config="legalEntityName">[INSERT LEGAL ENTITY NAME]</span>)<br>
+            Official Email: <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email" style="text-decoration: underline;">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a><br>
+            Studio Base: <span data-config="businessLocation">[City, Country]</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

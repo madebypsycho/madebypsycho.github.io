@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Apps — Psycho Labs | Independent Android Software Studio</title>
+  <meta name="description" content="Explore current Android apps and utilities in development at Psycho Labs, including ReverseView USB camera monitor and Auto Launcher.">
+  <meta name="author" content="Psycho Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Apps — Psycho Labs Software Portfolio">
+  <meta property="og:description" content="Explore ReverseView and Auto Launcher. Independent Android software built to solve real-world problems.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link active">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="policy-page-header">
+      <div class="container">
+        <div class="policy-badge-row">
+          <span class="sticker purple tilt-left">SOFTWARE REPOSITORY</span>
+          <span class="sticker black">ACTIVE LAB PROJECTS</span>
+        </div>
+        <h1 class="section-title">OUR APPS</h1>
+        <p class="section-desc">
+          Independent digital products and Android utilities engineered by Psycho Labs. Built to make everyday technology work better.
+        </p>
+      </div>
+    </section>
+
+    <!-- Apps Showcase Section -->
+    <section class="policy-content-body">
+      <div class="container">
+
+        <!-- App 1: ReverseView Full Deep Dive -->
+        <article class="legal-card" id="reverseview" style="margin-bottom: 3.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <div class="sticker yellow" style="margin-bottom: 0.5rem;">STATUS: IN DEVELOPMENT</div>
+              <h2 style="margin: 0; border: none; padding: 0;">REVERSEVIEW</h2>
+              <span class="app-category-tag" style="display: block; margin-top: 0.35rem;">Android Video &amp; Camera Utility &bull; UVC USB Bridge</span>
+            </div>
+            <div style="font-size: 3rem; background: var(--c-offwhite); border: var(--border-med); border-radius: var(--radius-sm); width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              📹
+            </div>
+          </div>
+
+          <h3>Project Overview</h3>
+          <p>
+            <strong>ReverseView</strong> is an Android utility engineered to turn a compatible Android smartphone or tablet into a responsive rear-view camera monitor. By interfacing directly with low-cost, widely available USB video capture cards (UVC standard), ReverseView displays live video from any analog or composite vehicle backup camera with minimal latency.
+          </p>
+
+          <h3>Key Architectural Capabilities</h3>
+          <ul>
+            <li><strong>Plug-and-Play USB Video Class (UVC):</strong> Interfaces directly with Android's USB Host API without requiring root privileges.</li>
+            <li><strong>Low-Latency Video Pipeline:</strong> Direct hardware frame decoding for real-time visual feedback when reversing or maneuvering.</li>
+            <li><strong>Customizable Screen Overlays:</strong> Optional parking guide lines, horizontal mirroring, and brightness adjustments.</li>
+            <li><strong>Local-First Processing:</strong> Video frames are processed entirely in memory on-device and never saved, uploaded, or transmitted across a network.</li>
+          </ul>
+
+          <div class="placeholder-notice">
+            <strong>Development &amp; Store Status:</strong><br>
+            ReverseView is currently in active development and internal testing on various Android hardware devices. It has not yet been released on the Google Play Store. Public release announcements and testing invitations will be published here.
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a href="privacy-reverseview.html" class="btn btn-sm btn-primary">ReverseView Privacy Policy &rarr;</a>
+            <a href="contact.html" class="btn btn-sm btn-secondary">Inquire About Early Testing</a>
+          </div>
+        </article>
+
+        <!-- App 2: Auto Launcher Full Deep Dive -->
+        <article class="legal-card" id="autolauncher" style="margin-bottom: 3.5rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <div class="sticker yellow" style="margin-bottom: 0.5rem;">STATUS: IN DEVELOPMENT</div>
+              <h2 style="margin: 0; border: none; padding: 0;">AUTO LAUNCHER</h2>
+              <span class="app-category-tag" style="display: block; margin-top: 0.35rem;">Android Auto &amp; In-Vehicle Utility</span>
+            </div>
+            <div style="font-size: 3rem; background: var(--c-offwhite); border: var(--border-med); border-radius: var(--radius-sm); width: 70px; height: 70px; display: flex; align-items: center; justify-content: center;">
+              🚗
+            </div>
+          </div>
+
+          <h3>Project Overview</h3>
+          <p>
+            <strong>Auto Launcher</strong> is an independent Android utility project designed to provide drivers with an uncluttered, distraction-free interface for their favorite automotive applications, diagnostics, and navigation tools.
+          </p>
+
+          <h3>Key Architectural Capabilities</h3>
+          <ul>
+            <li><strong>High-Visibility UI:</strong> Oversized touch targets, high-contrast typography, and intuitive swipe gestures tailored for in-vehicle environments.</li>
+            <li><strong>Quick App Routing:</strong> Fast one-tap access to navigation, music playback, and communication tools.</li>
+            <li><strong>Automatic Day/Night Contrast:</strong> Dynamic contrast shifting to ensure eye comfort under varying light and night-driving conditions.</li>
+            <li><strong>Independent Utility Architecture:</strong> Designed as a standalone Android utility; no proprietary vehicle lock-in or telemetry sharing.</li>
+          </ul>
+
+          <div class="placeholder-notice">
+            <strong>Trademark &amp; Affiliation Disclaimer:</strong><br>
+            Auto Launcher is an independent software project developed by Psycho Labs. It is not published by, sponsored by, or officially affiliated with Google LLC, Android, or Android Auto.
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a href="privacy-autolauncher.html" class="btn btn-sm btn-primary">Auto Launcher Privacy Policy &rarr;</a>
+            <a href="contact.html" class="btn btn-sm btn-secondary">Inquire About Project</a>
+          </div>
+        </article>
+
+        <!-- Easy Future Expansion Notice -->
+        <div class="sticker-feature-card" style="text-align: center; padding: 2.5rem 1.5rem;">
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🔬</span>
+          <h3 class="feature-title" style="font-size: 1.4rem; margin-bottom: 0.5rem;">MORE EXPERIMENTS IN THE INCUBATOR</h3>
+          <p class="feature-text" style="max-width: 580px; margin: 0 auto 1.5rem;">
+            Psycho Labs maintains an active pipeline of software experiments, hardware utilities, and creative tools. New prototypes are documented here as they reach the testable phase.
+          </p>
+          <a href="contact.html" class="btn btn-sm btn-secondary">Pitch An Idea or Collaborate &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Experiment Not Found | Psycho Labs</title>
+  <meta name="description" content="The requested page could not be found on Psycho Labs.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content" style="flex-grow: 1; display: flex; align-items: center; padding: 5rem 0;">
+    <div class="container" style="text-align: center;">
+      
+      <div style="max-width: 540px; margin: 0 auto; background: var(--c-white); border: var(--border-thick); box-shadow: var(--shadow-hard-lg); border-radius: var(--radius-md); padding: 3rem 2rem;">
+        
+        <div style="font-size: 4rem; margin-bottom: 0.5rem;" aria-hidden="true">
+          🧪💥
+        </div>
+
+        <div class="sticker yellow tilt-left" style="margin-bottom: 1rem;">ERROR 404 &bull; NULL POINTER</div>
+
+        <h1 style="font-size: 2rem; font-weight: 400; text-transform: uppercase; margin-bottom: 1rem;">
+          EXPERIMENT FAILED.
+        </h1>
+
+        <p style="font-size: 1.05rem; color: var(--c-muted); margin-bottom: 2rem;">
+          The page or prototype you're looking for was vaporized, moved, or never existed in this dimension.
+        </p>
+
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn btn-primary">Return to Lab (Home)</a>
+          <a href="apps.html" class="btn btn-secondary">Explore Our Apps</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

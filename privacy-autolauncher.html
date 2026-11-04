@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Launcher Privacy Policy — Psycho Labs</title>
+  <meta name="description" content="Dedicated Privacy Policy for Auto Launcher Android application by Psycho Labs. Transparent details on permissions, local processing, and data handling.">
+  <meta name="author" content="Psycho Labs">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Auto Launcher Privacy Policy — Psycho Labs">
+  <meta property="og:description" content="Privacy practices and disclosures for the Auto Launcher Android utility.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="index.html#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="policy-page-header">
+      <div class="container">
+        <div class="policy-badge-row">
+          <span class="sticker purple tilt-left">APP-SPECIFIC POLICY</span>
+          <span class="sticker yellow">ANDROID APPLICATION</span>
+        </div>
+        <h1 class="section-title">AUTO LAUNCHER PRIVACY POLICY</h1>
+        <p class="section-desc">
+          Specific privacy disclosures for the Auto Launcher Android utility developed by Psycho Labs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="policy-content-body">
+      <div class="container container-narrow">
+        
+        <div class="legal-card">
+          
+          <div class="placeholder-notice">
+            <strong>DOCUMENT STATUS &amp; INSTRUCTIONS FOR DEVELOPER:</strong><br>
+            This policy is tailored specifically for the <strong>Auto Launcher</strong> Android application. Placeholders marked in yellow brackets <span class="placeholder-highlight">[LIKE THIS]</span> must be reviewed and customized to match your exact build specifications before submitting this URL to Google Play Console.
+          </div>
+
+          <p>
+            <strong>Application Name:</strong> Auto Launcher<br>
+            <strong>Package Name:</strong> <span class="placeholder-highlight">[INSERT_ANDROID_PACKAGE_NAME, e.g., com.psycholabs.autolauncher]</span><br>
+            <strong>Developer / Organization:</strong> Psycho Labs (<span data-config="legalEntityName">[INSERT LEGAL ENTITY NAME]</span>)<br>
+            <strong>Developer Contact Email:</strong> <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email" style="text-decoration: underline;">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a><br>
+            <strong>Last Updated:</strong> <span class="placeholder-highlight">[INSERT_DATE, e.g., November 3, 2026]</span>
+          </p>
+
+          <h2>1. NON-AFFILIATION DISCLAIMER</h2>
+          <p>
+            <strong>Auto Launcher</strong> is an independent software application developed and published exclusively by Psycho Labs. Auto Launcher is <strong>not</strong> sponsored by, endorsed by, or affiliated with Google LLC, Android, or the official Android Auto platform.
+          </p>
+
+          <h2>2. OVERVIEW &amp; NATURE OF THE APP</h2>
+          <p>
+            Auto Launcher is designed to provide an organized, high-visibility launcher interface optimized for in-vehicle smartphone use. It allows users to access navigation tools, audio controls, and phone shortcuts through large, driver-friendly touch targets.
+          </p>
+
+          <h2>3. DATA ACCESSED &amp; PERMISSIONS REQUESTED</h2>
+          <p>
+            Depending on features enabled by the user, Auto Launcher may request access to:
+          </p>
+
+          <h3>A. Installed Application Querying (QUERY_ALL_PACKAGES)</h3>
+          <ul>
+            <li><strong>Purpose:</strong> Because Auto Launcher functions as an app launcher / home utility, it queries the Android PackageManager to identify installed applications so the user can choose which apps to place on their automotive home screen.</li>
+            <li><strong>Usage &amp; Storage:</strong> The list of installed apps is read strictly on-device in real time. <strong>Your installed app inventory is never uploaded, shared, or transmitted to any external server.</strong></li>
+          </ul>
+
+          <h3>B. Location Data (GPS)</h3>
+          <div class="placeholder-notice">
+            <strong>DEVELOPER ACTION REQUIRED — SPECIFY LOCATION STATUS:</strong><br>
+            Choose Option A or Option B below and remove the other before publishing:
+          </div>
+          <p>
+            <span class="placeholder-highlight">[OPTION A — IF LOCATION IS NOT USED:]</span><br>
+            Auto Launcher does not request access to fine or coarse device location. No GPS or vehicle speed data is tracked.
+          </p>
+          <p>
+            <span class="placeholder-highlight">[OPTION B — IF SPEEDOMETER / TRIP STATS ARE USED:]</span><br>
+            If enabled for real-time speedometer display, Auto Launcher accesses device location (ACCESS_FINE_LOCATION) solely while in the foreground to calculate current ground speed. Speed and coordinates are displayed live on-screen and are not logged, transmitted, or shared remotely.
+          </p>
+
+          <h3>C. Notification Access / Media Session (Optional)</h3>
+          <ul>
+            <li><strong>Purpose:</strong> If the user opts into media controls, Android's NotificationListenerService or MediaSessionManager may be used to display current track titles and playback controls (play/pause/skip).</li>
+            <li><strong>Usage:</strong> Metadata is used strictly to render playback controls on the dashboard. No message contents or personal notification texts are stored or transmitted.</li>
+          </ul>
+
+          <h2>4. PERSONAL IDENTIFIABLE INFORMATION (PII)</h2>
+          <p>
+            <span class="placeholder-highlight">[CONFIRM OR AMEND: Auto Launcher does NOT collect, store, or transmit your name, phone number, vehicle VIN, contacts, or personal accounts.]</span>
+          </p>
+
+          <h2>5. DIAGNOSTICS &amp; CRASH REPORTING</h2>
+          <div class="placeholder-notice">
+            <strong>DEVELOPER ACTION REQUIRED — SPECIFY CRASH REPORTING STATUS:</strong><br>
+            Choose Option A or Option B below and remove the other:
+          </div>
+          <p>
+            <span class="placeholder-highlight">[OPTION A — IF NO THIRD-PARTY SDKS ARE INCLUDED:]</span><br>
+            Auto Launcher contains no third-party analytics SDKs or advertising networks. It operates entirely as an offline utility.
+          </p>
+          <p>
+            <span class="placeholder-highlight">[OPTION B — IF YOU INCLUDE CRASH REPORTING:]</span><br>
+            Auto Launcher may collect anonymous diagnostic crash logs through standard Google Play developer consoles or <span class="placeholder-highlight">[INSERT CRASH SERVICE]</span> strictly to identify stability bugs and memory leaks.
+          </p>
+
+          <h2>6. DATA RETENTION &amp; DELETION</h2>
+          <p>
+            Custom dashboard layouts, favorite app shortcuts, and user preferences are saved locally on your device in standard Android storage. When you uninstall Auto Launcher or clear the app's cache and data, all local configurations are permanently wiped from the device.
+          </p>
+
+          <h2>7. DATA SECURITY</h2>
+          <p>
+            All application operations execute within standard Android app sandboxes. We do not maintain any cloud databases storing driving patterns, location telemetry, or user usage history.
+          </p>
+
+          <h2>8. SAFE DRIVING NOTICE</h2>
+          <p>
+            Auto Launcher is intended to reduce distraction through simplified interfaces. Users remain solely responsible for operating their vehicle safely and complying with all local traffic laws regarding mobile device use while driving.
+          </p>
+
+          <h2>9. PRIVACY CONTACT</h2>
+          <p>
+            For any privacy inquiries regarding Auto Launcher, please contact our studio:
+          </p>
+          <div class="placeholder-notice">
+            <strong>Psycho Labs — Auto Launcher Privacy Desk</strong><br>
+            Developer: Psycho Labs<br>
+            Email: <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email" style="text-decoration: underline;">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a><br>
+            Studio Website: <span data-config="websiteUrl">[WEBSITE_URL]</span>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="apps.html#autolauncher" class="btn btn-sm btn-secondary">&larr; Back to Auto Launcher Details</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="index.html#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psycho Labs — Independent Software &amp; Android App Studio</title>
+  <meta name="description" content="Psycho Labs is an independent software studio building useful, creative and experimental digital products and Android utilities.">
+  <meta name="keywords" content="Psycho Labs, independent software studio, Android apps, ReverseView, Auto Launcher, mobile software, utilities">
+  <meta name="author" content="Psycho Labs">
+
+  <!-- Open Graph / Meta for Social & Google Verification -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Psycho Labs — We Make Weirdly Useful Things">
+  <meta property="og:description" content="Independent software and Android app development studio. Experimental ideas, practical applications.">
+  <meta property="og:image" content="assets/images/header-mascot.png">
+
+  <!-- Google Search Console Verification Placeholder -->
+  <meta name="google-site-verification" content="[INSERT_GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN]">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192.png">
+
+  <!-- Fonts: Bowlby One SC (Matches Logo), Inter, JetBrains Mono, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Theme Init (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('psycho_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SITE HEADER / NAVIGATION
+       Header logo uses pure mascot only (no text under it)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link" aria-label="Psycho Labs Home">
+        <img src="assets/images/header-mascot.png" alt="Psycho Labs Mascot" class="header-logo theme-mascot-img">
+        <div class="brand-text-block">
+          <span class="brand-title">PSYCHO LABS</span>
+          <span class="brand-subtitle" data-config="headerTagline">SOFTWARE STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="apps.html" class="nav-link">Our Apps</a>
+        <a href="#philosophy" class="nav-link">Philosophy</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span class="theme-icon-moon" aria-hidden="true">🌙</span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️</span>
+        </button>
+        <a href="apps.html" class="btn btn-sm btn-primary nav-cta">Explore Apps</a>
+      </nav>
+
+      <!-- Mobile Toggle Button -->
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html">Home</a></li>
+      <li class="mobile-nav-item"><a href="about.html">About Studio</a></li>
+      <li class="mobile-nav-item"><a href="apps.html">Our Apps</a></li>
+      <li class="mobile-nav-item"><a href="#philosophy">Our Philosophy</a></li>
+      <li class="mobile-nav-item"><a href="contact.html">Contact Us</a></li>
+      <li class="mobile-nav-item"><a href="privacy.html">Privacy Policy</a></li>
+      <li class="mobile-nav-item"><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li class="mobile-theme-row">
+        <span>Theme Mode</span>
+        <button class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon-moon" aria-hidden="true">🌙 <span class="theme-toggle-label">Dark</span></span>
+          <span class="theme-icon-sun" aria-hidden="true" style="display:none;">☀️ <span class="theme-toggle-label">Light</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+         HERO SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Hero Copy -->
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="sticker yellow tilt-left">⚡ INDIE SOFTWARE LAB</span>
+            <span class="sticker purple tilt-right">ANDROID UTILITIES</span>
+          </div>
+
+          <h1 class="hero-headline">
+            WE MAKE <span class="highlight-purple">WEIRDLY USEFUL</span> THINGS.
+          </h1>
+
+          <p class="hero-supporting-text">
+            Independent minds. Experimental ideas. Software built to make everyday technology better.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="apps.html" class="btn btn-primary">
+              <span>EXPLORE OUR APPS</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>
+
+          <div class="sticker-status">
+            <span class="status-dot"></span>
+            <span>CURRENT STATUS: ACTIVE DEVELOPMENT &amp; EXPERIMENTAL BUILDS</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual: Authentic Mascot Artwork Frame -->
+        <div class="hero-visual-box">
+          <div class="floating-badge floating-badge-1">
+            <span class="sticker purple">EST. CURIOSITY</span>
+          </div>
+          <div class="floating-badge floating-badge-2">
+            <span class="sticker black">100% INDIE CODE</span>
+          </div>
+
+          <div class="mascot-frame">
+            <div class="mascot-frame-header">
+              <div class="frame-dots">
+                <span class="f-dot"></span>
+                <span class="f-dot"></span>
+                <span class="f-dot"></span>
+              </div>
+              <span>LAB_UNIT_01.EXE</span>
+            </div>
+
+            <div class="mascot-image-center">
+              <img src="assets/images/mascot-hero.png" alt="Psycho Labs Robot Mascot" class="mascot-hero-img">
+            </div>
+
+            <div class="mascot-frame-caption">
+              // OFFICIAL PSYCHO LABS MASCOT &bull; EXPERIMENTAL RIG
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ABOUT SECTION
+         ====================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            ABOUT PSYCHO LABS
+          </span>
+          <h2 class="section-title">A LITTLE DIFFERENT BY DESIGN.</h2>
+        </div>
+
+        <div class="about-box-grid">
+          
+          <div class="about-manifesto-card">
+            <p class="manifesto-lead">
+              Psycho Labs is an independent software studio focused on building useful, creative and thoughtfully designed digital products.
+            </p>
+            <p class="manifesto-body">
+              We experiment with ideas, solve everyday problems and turn interesting concepts into practical applications. Rather than chasing corporate trends or bloated feature lists, we focus on genuine utility, clever hardware-software bridges, and software that feels satisfying to use.
+            </p>
+            <a href="about.html" class="btn btn-sm btn-secondary">Read Full Studio Ethos &rarr;</a>
+          </div>
+
+          <div class="about-visual-manifesto">
+            
+            <div class="sticker-feature-card">
+              <div class="feature-card-header">
+                <span class="feature-icon">🧪</span>
+                <h3 class="feature-title">Independent &amp; Curious</h3>
+              </div>
+              <p class="feature-text">
+                No corporate bureaucracy, no trend-chasing. Just creative software engineers exploring unconventional solutions to real technical hurdles.
+              </p>
+            </div>
+
+            <div class="sticker-feature-card">
+              <div class="feature-card-header">
+                <span class="feature-icon">📱</span>
+                <h3 class="feature-title">Android &amp; Hardware Bridge</h3>
+              </div>
+              <p class="feature-text">
+                Specialized in deep Android system capabilities, USB Video Class (UVC) capture, in-vehicle integrations, and performance-critical tooling.
+              </p>
+            </div>
+
+            <div class="sticker-feature-card">
+              <div class="feature-card-header">
+                <span class="feature-icon">🔒</span>
+                <h3 class="feature-title">Respect For Users</h3>
+              </div>
+              <p class="feature-text">
+                We design local-first, low-overhead software with transparent policies and zero predatory telemetry.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         OUR APPS SECTION
+         ====================================================================== -->
+    <section class="section" id="apps">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            PROJECT DIRECTORY
+          </span>
+          <h2 class="section-title">OUR APPS</h2>
+          <p class="section-desc">
+            Explore our current software projects and Android utilities. Each project is engineered with an emphasis on practical problem-solving.
+          </p>
+        </div>
+
+        <div class="apps-grid">
+          
+          <!-- App 1: ReverseView -->
+          <article class="app-card" id="reverseview">
+            <div class="app-card-top">
+              <div class="app-illustration-placeholder" aria-hidden="true">
+                📹
+              </div>
+              <span class="sticker yellow">IN DEVELOPMENT</span>
+            </div>
+
+            <h3 class="app-card-title">ReverseView</h3>
+            <span class="app-category-tag">Android Video &amp; Camera Utility</span>
+
+            <p class="app-card-desc">
+              An Android reverse-camera application that connects a compatible USB video capture device to an Android phone to display a live, low-latency rear-camera feed. Designed for DIY vehicle safety, trailer monitoring, and custom auxiliary camera setups.
+            </p>
+
+            <div class="app-meta-specs">
+              <div class="spec-line"><strong>Platform:</strong> Android (USB Host / OTG compatible)</div>
+              <div class="spec-line"><strong>Status:</strong> In active development &bull; Internal hardware testing</div>
+              <div class="spec-line"><strong>Store Availability:</strong> Not yet published on Google Play</div>
+            </div>
+
+            <div class="app-card-footer">
+              <a href="privacy-reverseview.html" class="policy-link">ReverseView Privacy Policy &rarr;</a>
+              <a href="apps.html#reverseview" class="btn btn-sm btn-secondary">Project Details</a>
+            </div>
+          </article>
+
+          <!-- App 2: Auto Launcher -->
+          <article class="app-card" id="autolauncher">
+            <div class="app-card-top">
+              <div class="app-illustration-placeholder" aria-hidden="true">
+                🚗
+              </div>
+              <span class="sticker yellow">IN DEVELOPMENT</span>
+            </div>
+
+            <h3 class="app-card-title">Auto Launcher</h3>
+            <span class="app-category-tag">Android Auto &amp; In-Car Utility</span>
+
+            <p class="app-card-desc">
+              An Android utility project designed to optimize and streamline in-car dashboard navigation and device workflows. Engineered to deliver a driver-friendly, distraction-free interface for your favorite automotive tools.
+            </p>
+
+            <div class="app-meta-specs">
+              <div class="spec-line"><strong>Platform:</strong> Android &bull; In-car environment utility</div>
+              <div class="spec-line"><strong>Status:</strong> In active development &bull; Prototyping phase</div>
+              <div class="spec-line"><strong>Notice:</strong> Independent project; not affiliated with Google or Android Auto</div>
+            </div>
+
+            <div class="app-card-footer">
+              <a href="privacy-autolauncher.html" class="policy-link">Auto Launcher Privacy Policy &rarr;</a>
+              <a href="apps.html#autolauncher" class="btn btn-sm btn-secondary">Project Details</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHILOSOPHY SECTION (#222222 card background)
+         ====================================================================== -->
+    <section class="section section-dark" id="philosophy">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+            HOW WE THINK
+          </span>
+          <h2 class="section-title">BUILT OUT OF CURIOSITY.</h2>
+          <p class="section-desc">
+            Three core principles guide every line of code, experiment, and user interface we build at Psycho Labs.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          
+          <div class="philosophy-card">
+            <div class="philo-number">01</div>
+            <h3 class="philo-title">EXPERIMENT RELENTLESSLY.</h3>
+            <p class="philo-desc">
+              Break assumptions. Test unusual hardware pairings. Prototype the ideas that large corporations dismiss as too niche, too quirky, or too complex to bother building.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philo-number">02</div>
+            <h3 class="philo-title">KEEP THINGS USEFUL.</h3>
+            <p class="philo-desc">
+              No bloated gimmicks or useless complexity. An experiment is only truly complete when it genuinely solves a real, everyday problem for the person using it.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philo-number">03</div>
+            <h3 class="philo-title">MAKE TECHNOLOGY FEEL BETTER.</h3>
+            <p class="philo-desc">
+              Software shouldn't feel like navigating a corporate spreadsheet. We build tools with distinct personality, responsive touch feedback, and thoughtful design craft.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION (Single unified email address)
+         ====================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-eyebrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            DIRECT COMMUNICATION
+          </span>
+          <h2 class="section-title">GOT AN INTERESTING IDEA?</h2>
+          <p class="section-desc">
+            For questions, feedback, collaborations or app support, get in touch. We read every message.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <div class="contact-info-panel">
+            
+            <div class="contact-info-card">
+              <h3 class="contact-info-title">
+                <span>📬</span> Studio Directory
+              </h3>
+              
+              <!-- Single unified email address per user request -->
+              <div class="contact-item">
+                <span class="contact-label">Studio Email</span>
+                <span class="contact-value">
+                  <a href="mailto:[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]" data-config="email">[INSERT_YOUR_EMAIL, e.g., hello@psycholabs.dev]</a>
+                </span>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Business Phone</span>
+                <span class="contact-value" data-config="businessPhone">[Optional Business Phone]</span>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-label">Studio Base</span>
+                <span class="contact-value" data-config="businessLocation">[City, Country]</span>
+              </div>
+            </div>
+
+            <div class="sticker-feature-card">
+              <div class="feature-card-header">
+                <span class="feature-icon">🛡️</span>
+                <h4 class="feature-title">Verified Developer Studio</h4>
+              </div>
+              <p class="feature-text">
+                Official organization website for Psycho Labs. Verified contact channel for Google Play Console, app users, and software partners.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <form class="contact-form-element" action="#" method="POST">
+              
+              <div class="form-group">
+                <label for="c-name" class="form-label">Your Name *</label>
+                <input type="text" id="c-name" name="name" required placeholder="Alex Mercer" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="c-email" class="form-label">Your Email *</label>
+                <input type="email" id="c-email" name="email" required placeholder="alex@example.com" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="c-subject" class="form-label">Topic / App</label>
+                <input type="text" id="c-subject" name="subject" placeholder="ReverseView feedback / General inquiry" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="c-message" class="form-label">Message *</label>
+                <textarea id="c-message" name="message" rows="4" required placeholder="What are you building or wondering about?" class="form-textarea"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>SEND MESSAGE</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+
+            <div class="form-feedback-message"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       SITE FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/header-mascot-dark.png" alt="Psycho Labs Mascot" class="footer-logo">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">PSYCHO LABS</span>
+              <span class="brand-subtitle" style="color: var(--c-violet);" data-config="headerTagline">SOFTWARE STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Psycho Labs is an independent software studio building creative, experimental and thoughtfully crafted digital products and Android utilities.
+          </p>
+          <div class="sticker purple tilt-left" style="width: max-content;">
+            WE MAKE WEIRDLY USEFUL THINGS.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="apps.html">Our Apps</a></li>
+            <li><a href="#philosophy">Our Philosophy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal &amp; Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Master Privacy Policy</a></li>
+            <li><a href="privacy-reverseview.html">ReverseView Privacy Policy</a></li>
+            <li><a href="privacy-autolauncher.html">Auto Launcher Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> <span data-config="studioName">Psycho Labs</span>. All Rights Reserved.
+        </div>
+        <div>
+          Independent Software Studio &bull; Official Organization Website
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
