@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://psycholabs.dev/sitemap.xml
+Sitemap: https://madebypsycho.github.io/sitemap.xml

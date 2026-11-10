@@ -31,13 +31,13 @@ const PSYCHO_CONFIG = {
 
   // Business Phone & Location
   businessPhone: "+91 6201211903",
-  businessLocation: "Patna, India",
+  businessLocation: "Patna, Bihar, India",
 
   // Official Domains & URLs
-  websiteUrl: "psycholabs.com", // or your custom domain: https://psycholabs.dev
+  websiteUrl: "https://madebypsycho.github.io",
   googlePlayDeveloperName: "Psycho Labs",
   googlePlayDeveloperUrl: "[INSERT_GOOGLE_PLAY_DEVELOPER_PAGE_URL_ONCE_ACTIVE]",
-  githubOrgUrl: "https://github.com/[INSERT_GITHUB_USERNAME]",
+  githubOrgUrl: "https://github.com/madebypsycho",
 
   // Active Android Apps
   apps: {
