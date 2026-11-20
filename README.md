@@ -18,8 +18,10 @@ Official website for **Psycho Labs** — independent software and Android app de
 - **Apps:** [madebypsycho.github.io/apps.html](https://madebypsycho.github.io/apps.html)
 - **About:** [madebypsycho.github.io/about.html](https://madebypsycho.github.io/about.html)
 - **Contact:** [madebypsycho.github.io/contact.html](https://madebypsycho.github.io/contact.html)
-- **Privacy Policy:** [madebypsycho.github.io/privacy.html](https://madebypsycho.github.io/privacy.html)
-- **Terms & Conditions:** [madebypsycho.github.io/terms.html](https://madebypsycho.github.io/terms.html)
+- **Master Privacy Policy:** [madebypsycho.github.io/privacy.html](https://madebypsycho.github.io/privacy.html)
+- **Website Terms & Conditions:** [madebypsycho.github.io/terms.html](https://madebypsycho.github.io/terms.html)
+- **Reverse View Terms & Conditions:** [madebypsycho.github.io/terms-reverseview.html](https://madebypsycho.github.io/terms-reverseview.html)
+- **Reverse View Privacy Policy:** [madebypsycho.github.io/privacy-reverseview.html](https://madebypsycho.github.io/privacy-reverseview.html)
 
 ---
 
