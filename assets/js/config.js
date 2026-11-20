@@ -43,11 +43,16 @@ const PSYCHO_CONFIG = {
   apps: {
     reverseview: {
       name: "Reverse View",
-      status: "In Development",
-      category: "Android Camera & Video Utility",
-      shortDescription: "Android reverse-camera application connecting a compatible USB video capture device to an Android phone to display a live rear-camera feed.",
-      targetSdk: "Android 10+ (API level 29+)",
-      privacyPolicyUrl: "privacy-reverseview.html"
+      status: "Available on Google Play",
+      playStoreUrl: "https://play.google.com/store/apps/details?id=com.psycholabs.reverseview",
+      package: "com.psycholabs.reverseview",
+      version: "1.0.4",
+      icon: "assets/apps/reverseview.png",
+      category: "Android Camera & Automotive Utility",
+      shortDescription: "Android reverse-camera application connecting a compatible USB video capture device to an Android phone or tablet to display a real-time, low-latency rear-camera feed.",
+      targetSdk: "Android 10+ (API level 29–36)",
+      privacyPolicyUrl: "privacy-reverseview.html",
+      termsUrl: "terms.html"
     },
     autolauncher: {
       name: "Auto Launcher",

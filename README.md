@@ -32,10 +32,10 @@ Psycho Labs/
 │
 ├── index.html                  # Official studio homepage
 ├── about.html                  # Studio profile, ethos, and engineering focus
-├── apps.html                   # Software showcase (ReverseView, Auto Launcher)
+├── apps.html                   # Software showcase (Reverse View, Auto Launcher)
 ├── contact.html                # Direct developer studio contact page
 ├── privacy.html                # Studio Master Privacy Policy
-├── privacy-reverseview.html    # Dedicated standalone Privacy Policy for ReverseView
+├── privacy-reverseview.html    # Dedicated standalone Privacy Policy for Reverse View
 ├── privacy-autolauncher.html   # Dedicated standalone Privacy Policy for Auto Launcher
 ├── terms.html                  # Studio Terms & Conditions
 ├── 404.html                    # Custom 404 error page (handled by GitHub Pages)
@@ -106,7 +106,7 @@ The verification tag has been placed in the `<head>` of [`index.html`](index.htm
 4. Under **Contact details**, verify your developer email:
    `psycholabssupport@gmail.com`
 5. When creating your apps in Google Play Console, use the dedicated standalone privacy policy URLs:
-   - **ReverseView**: `https://madebypsycho.github.io/privacy-reverseview.html`
+   - **Reverse View**: `https://madebypsycho.github.io/privacy-reverseview.html`
    - **Auto Launcher**: `https://madebypsycho.github.io/privacy-autolauncher.html`
 
 ---
